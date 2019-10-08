@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jasmine Tests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.css">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/jasmine-html.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.2/boot.js"></script>
+
+  <script>
+var earth = {
+    isRound: true,
+    numberFromSun : 0
+}
+earth.numberFromSun =3;
+describe("Earth", function(){
+    it("is round", function(){
+        expect(earth.isRound).toBe(true)
+    });
+    it("is  the third planet from the sun", function(){
+         expect(earth.numberFromSun).toBe(3)
+    });
+})
+   </script>
+</body>
+</html>
+
+
+
+<!-- https://codepen.io/eschoppik/pen/ZybNdo -->
